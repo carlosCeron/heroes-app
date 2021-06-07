@@ -1,10 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import HeroList from '../heroes/HeroList'
 
 const DcScreen = props => {
   return (
     <div>
       <h1>DcScreen</h1>
+      <hr />
+      <HeroList publisher='DC Comics' />
     </div>
   )
 }

@@ -9,7 +9,7 @@ export const DashboardRoutes = () => {
   return (
     <Fragment>
       <Navbar />
-      <div>
+      <div className='container'>
         <Switch>
           <Route exact path="/marvel" component={MarvelScreen} />
           <Route exact path="/heroe/:heroId" component={HeroScreen} />
