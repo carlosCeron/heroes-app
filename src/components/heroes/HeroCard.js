@@ -16,7 +16,7 @@ const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance, charac
             <p className="card-text">
               <small className="text-muted">{first_appearance}</small>
             </p>
-            <Link>
+            <Link to={`/heroe/${id}`}>
               Mas..
             </Link>
           </div>

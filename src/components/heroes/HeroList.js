@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { getHeroesByPublisher } from '../selectores/getHeroesByPublisher'
 import HeroCard from './HeroCard';
@@ -6,7 +6,7 @@ import HeroCard from './HeroCard';
 const HeroList = ({publisher}) => {
 
 
-  const heroesList = getHeroesByPublisher(publisher);
+  const heroesList = useMemo(() => getHeroesByPublisher(publisher), [ publisher ]) ;
 
   return (
     <div className='card-columns'>
