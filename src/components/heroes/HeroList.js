@@ -19,7 +19,7 @@ const HeroList = ({publisher}) => {
 }
 
 HeroList.propTypes = {
-
+  publisher: PropTypes.string.isRequired
 }
 
 export default HeroList

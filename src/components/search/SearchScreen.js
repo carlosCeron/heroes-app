@@ -64,6 +64,8 @@ const SearchScreen = ({history}) => {
   );
 };
 
-SearchScreen.propTypes = {};
+SearchScreen.propTypes = {
+  history: PropTypes.object.isRequired
+};
 
 export default SearchScreen;

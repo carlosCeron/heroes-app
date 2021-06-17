@@ -38,7 +38,7 @@ const HeroScreen = ({history}) => {
 }
 
 HeroScreen.propTypes = {
-
+  history: PropTypes.object.isRequired
 }
 
 export default HeroScreen

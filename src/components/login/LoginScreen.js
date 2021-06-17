@@ -50,7 +50,7 @@ const LoginScreen = ({history}) => {
 }
 
 LoginScreen.propTypes = {
-
+  history: PropTypes.object.isRequired
 }
 
 export default LoginScreen

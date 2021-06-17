@@ -1,8 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import HeroList from '../heroes/HeroList'
+import React from 'react';
+import HeroList from '../heroes/HeroList';
 
-const MarvelScreen = props => {
+const MarvelScreen = () => {
   return (
     <div>
       <h2>Marvel Screen</h2>
@@ -10,10 +9,6 @@ const MarvelScreen = props => {
       <HeroList publisher='Marvel Comics' />
     </div>
   )
-}
-
-MarvelScreen.propTypes = {
-
 }
 
 export default MarvelScreen

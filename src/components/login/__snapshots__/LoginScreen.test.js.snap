@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Debe renderizar el componente login Evalua el componente LoginScreen 1`] = `
-<div>
-  <h1>
-    Login Screen
-  </h1>
-</div>
-`;
