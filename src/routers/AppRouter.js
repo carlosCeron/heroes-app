@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import {
   BrowserRouter as Router,
   Switch
@@ -6,7 +6,6 @@ import {
 import LoginScreen from '../components/login/LoginScreen';
 import { DashboardRoutes } from './DashboardRoutes';
 import PrivateRoutes from './PrivateRoutes';
-import { useContext } from 'react';
 import { AuthContext } from '../auth/AuthContext';
 import PublicRoutes from './PublicRoute';
 
