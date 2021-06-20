@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { heroes } from "../../data/heroes";
 import HeroCard from "../heroes/HeroCard";
 import { useForm } from "../../hooks/useForm";
-import { useLocation } from "react-router";
+import { useLocation } from "react-router-dom";
 import { getHeroesByName } from "../selectores/getHeroesByName";
 
 const SearchScreen = ({history}) => {

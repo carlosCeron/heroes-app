@@ -9,8 +9,8 @@ const HeroScreen = ({history}) => {
 
   const heroe =  useMemo(() => getHeroeById(heroId), [heroId]) ;
 
-  if ( !heroe ) {
-    return <Redirect to="/marvel" />
+  if ( heroe.length ==  0) {
+    return <Redirect to="/" />;
   }
 
   const {superhero, publisher, alter_ego, first_appearance, characters} = heroe[0];
