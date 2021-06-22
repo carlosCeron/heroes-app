@@ -2,6 +2,8 @@ import React, { useMemo } from 'react'
 import PropTypes from 'prop-types'
 import { Redirect, useParams } from 'react-router'
 import { getHeroeById } from '../selectores/getHeroByID';
+import { heroImages } from './../../helpers/heroImiages';
+
 
 const HeroScreen = ({history}) => {
 
@@ -9,7 +11,7 @@ const HeroScreen = ({history}) => {
 
   const heroe =  useMemo(() => getHeroeById(heroId), [heroId]) ;
 
-  if ( heroe.length ==  0) {
+  if ( heroe.length ===  0) {
     return <Redirect to="/" />;
   }
 
@@ -22,7 +24,7 @@ const HeroScreen = ({history}) => {
   return (
     <div className="row mt-5">
       <div className="col-4 animate__animated animate__fadeIn">
-        <img src={`../assets/heroes/${heroId}.jpg`} alt={heroId} className="img-thumbnail" />
+        <img src={heroImages(`./${heroId}.jpg`).default} alt={heroId} className="img-thumbnail" />
       </div>
       <div className="col-8">
         <h3>{superhero}</h3>

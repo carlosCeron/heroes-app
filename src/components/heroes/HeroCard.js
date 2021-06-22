@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
+import { heroImages } from '../../helpers/heroImiages';
 
-const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance, characters}) => {
+const HeroCard = ({id, superhero, publisher, alter_ego, first_appearance, characters}) => {  
+  
   return (
     <div className="card col-md-6" style={{maxWidth: 540}}>
       <div className="row no-gutters">
         <div className="col-md-4">
-          <img src={`./assets/heroes/${id}.jpg`} className="card-img" alt="superhero" />
+          <img src={heroImages(`./${id}.jpg`).default} className="card-img" alt="superhero" />
         </div>
         <div className="col-md-8">
           <div className="card-body">
